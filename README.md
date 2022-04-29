@@ -12,6 +12,8 @@ I have used the following components:
 
 - container
 - grid
+- carousel
+- listgroup
 - navbar
 - card
 - utilities
