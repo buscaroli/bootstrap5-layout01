@@ -12,9 +12,9 @@
   
   <!-- header -->
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="container-xl">
-        <a href="#intro" class="navbar-brand">
+        <a href="#" class="navbar-brand">
           <span class="text-light display-2">Hello</span>
         </a>
         
@@ -24,9 +24,9 @@
 
         <div class="collapse navbar-collapse justify-content-end align-center text-light" id="main-nav">
           <ul class="navbar-nav">
-            <li class="nav-item ps-2">Intro</li>
-            <li class="nav-item ps-2">Projects</li>
-            <li class="nav-item ps-2">Contacts</li>
+            <li class="nav-item ps-3 fw-bold"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item ps-3 fw-bold"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item ps-3 fw-bold"><a class="nav-link" href="#">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -34,9 +34,9 @@
   </header>
 
   <!-- main -->
-  <main class="container-fluid">
+  <main class="container d-flex justify-content-center">
     <div class="row my-4">
-      <div class="col col-3 flex-column align-self-lg-stretch"> <!-- ASIDE with Links --> 
+      <div class="col d-none d-lg-block d-xl-block d-xxl-block col-3 flex-column align-self-lg-stretch"> <!-- ASIDE with Links --> 
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
             Links
@@ -44,24 +44,25 @@
           <a href="#" class="list-group-item list-group-item-action">Page One</a>
           <a href="#" class="list-group-item list-group-item-action">Page Two</a>
           <a href="#" class="list-group-item list-group-item-action">Page Three</a>
-          <a class="list-group-item list-group-item-action disabled">Page Four</a>
+          <a href="#" class="list-group-item list-group-item-action ">Page Four</a>
           <a href="#" class="list-group-item list-group-item-action">Page One</a>
           <a href="#" class="list-group-item list-group-item-action">Page Two</a>
           <a href="#" class="list-group-item list-group-item-action">Page Three</a>
-          <a class="list-group-item list-group-item-action disabled">Page Four</a>
+          <a href="#" class="list-group-item list-group-item-action">Page Four</a>
           <a href="#" class="list-group-item list-group-item-action">Page One</a>
           <a href="#" class="list-group-item list-group-item-action">Page Two</a>
-          <a href="#" class="list-group-item list-group-item-action">Page Three</a>
-          <a class="list-group-item list-group-item-action disabled">Page Four</a>
+          
         </div>
       </div>
       
-      <div class="col col-9"> <!-- TOP RIGHT with Carousel-->
-        <div class="row mb-4 w-75 mx-auto">
+      
+
+      <div class="col col-9 mx-auto"> <!-- TOP RIGHT with Carousel-->
+        <div class="row mb-4">
           <div class="col">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active ">
                   <img src="./assets/dawid-zawila.jpeg" class="d-block w-100" alt="from photographer dawid zawila at unsplash">
                 </div>
                 <div class="carousel-item">
@@ -78,42 +79,47 @@
           </div> 
         </div>
         
-        <div class="row"> <!-- BOTTOM RIGHT with Cards-->
-          <div class="col-4">
-            <div class="card">
-              <h5 class="card-header bg-primary text-light">Basic</h5>
-              <div class="card-body">
-                <h5 class="card-title">Our cheapest option</option></h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Checkout</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-4">
-            <div class="card">
-              <h5 class="card-header bg-primary text-light">Gold</h5>
-              <div class="card-body">
-                <h5 class="card-title">Our Premium Option</option>
-                </h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Checkout</a>
-              </div>
-            </div>
-          </div>
+        <div class="container"> <!-- BOTTOM RIGHT with Cards-->
+          <div class="row"> 
 
-          <div class="col-4">
-            <div class="card">
-              <h5 class="card-header bg-primary text-light">Silver</h5>
-              <div class="card-body">
-                <h5 class="card-title">Our Next-level option</option>
-                </h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Checkout</a>
+            <div class="col-lg-4">
+              <div class="card mt-2">
+                <h5 class="card-header bg-warning text-light text-center display-6">Gold</h5>
+                <div class="card-body">
+                  <h5 class="card-title lead text-center">Premium Option</option>
+                  </h5>
+                  <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-warning d-flex justify-content-center">Checkout</a>
+                </div>
               </div>
             </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card mt-2">
+                <h5 class="card-header bg-secondary text-light text-center display-6">Silver</h5>
+                <div class="card-body">
+                  <h5 class="card-title lead text-center">Best All-Rounder</option>
+                  </h5>
+                  <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary d-flex justify-content-center">Checkout</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card mt-2">
+                <h5 class="card-header bg-primary text-light text-center display-6">Basic</h5>
+                <div class="card-body">
+                  <h5 class="card-title lead text-center">Convenient</option></h5>
+                  <p class="card-text text-center ">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary d-flex justify-content-center">Checkout</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
         
       </div>
